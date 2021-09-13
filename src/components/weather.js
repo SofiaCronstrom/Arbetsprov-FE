@@ -8,7 +8,8 @@ const Weather = () => {
      <body>
               <form className="location-input">
                 <label className="label" for="city">Hur är vädret i...</label>
-                <input type="text" name="city" className="input"/>
+                <input value="Stad:"type="text" name="city" className="input"/>
+                <button type="submit" className="submit-button"></button>
               </form>
 
               <div className="container">

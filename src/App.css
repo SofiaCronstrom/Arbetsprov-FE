@@ -12,7 +12,7 @@
   width: 100vw;
   height: 100vh;
 }
-.label{
+.label, .input{
   font-family: 'Roboto', sans-serif;
 }
 
@@ -22,7 +22,13 @@
   .App{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
   }
+
   .container{
     display: grid;
     grid-template-columns: repeat(1, 335px);
@@ -38,23 +44,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 136px;
+    gap: 30px;
   }
+  
+  .label{
+    width: 236px;
+    height: 1em;
+    font-weight: 900;
+    font-size: 2em;
+  }
+
   .input{
-    
     width: 335px;
     height: 71px;
-    left: 20px;
-    top: 115px;
+   font-size: 1.25em;
     border-style: none;
   }
-  .label{
+  .input[value="Stad:"]{
+    margin: 0 10px;
+    padding-left: 10px;
+  }
+  .submit-button{
     
-    width: 236px;
-    height: 35px;
-    left: 69.5px;
-    top: 50px;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 108%;
   }
 }
