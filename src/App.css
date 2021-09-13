@@ -1,6 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.App{
+  background-color: #EEEEEE;
+  width: 100vw;
+  height: 100vh;
+}
+.label{
+  font-family: 'Roboto', sans-serif;
+}
 
 
 
-
-
-
+@media only screen and (max-width: 375px){
+  .App{
+    width: 100vw;
+    height: 100vh;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: repeat(1, 335px);
+    gap: 20px;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .box{
+    background-color: #F24726;
+    height: 120px;
+  }
+  .location-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input{
+    
+    width: 335px;
+    height: 71px;
+    left: 20px;
+    top: 115px;
+    border-style: none;
+  }
+  .label{
+    
+    width: 236px;
+    height: 35px;
+    left: 69.5px;
+    top: 50px;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 108%;
+  }
+}
