@@ -1,14 +1,17 @@
 import React, {useState} from 'react';
 import Union from './images/Union.png';
 
-const Form = () => {
+const Form = ({onSubmitSearch}) => {
+
 const [location, setLocation] = useState('')
 
   const onSubmit = (e) => {
     e.preventDefault();
     if (!location || location === '') return;
+    onSubmitSearch(location)
   }
-  console.log(location);
+  
+
     return ( 
     <div className="wrapper">
      
