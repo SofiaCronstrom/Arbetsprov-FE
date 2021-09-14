@@ -11,7 +11,7 @@ const Weather = () => {
               <form className="location-input">
                 <label className="label" for="city">Hur är vädret i...</label>
                 <div className="flex-input">
-                  <input value="Stad:"type="text" name="city" className="input"/>
+                  <input /*type="text"*/ name="city" className="input"/>
                   <button type="submit" className="submit-btn">
                     <img src={Union} alt="cross to submit the search" className="submit-icon"/>
                   </button>
@@ -27,7 +27,7 @@ const Weather = () => {
                   <img src={Sunny} className="icon" alt="sun"/>
                   <div className="flex-temp">
                       <span>17&deg;</span>
-                      <h4>CITY</h4>
+                      <h4>STOCKHOLM</h4>
                   </div>  
                   </div>
                   <div className="box"></div>

@@ -11,14 +11,114 @@
   background-color: #EEEEEE;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
 }
+.location-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 136px;
+  gap: 30px;
+}
+.label{
+  width: 236px;
+  height: 1em;
+  font-weight: 900;
+  font-size: 2em;
+}
+.flex-input{
+ display: inline-flex;
+ width: 598px;
+ height: 71px;
+}
+.input{
+  width: 562px;
+  height: 71px;
+ font-size: 1.25em;
+  border-style: none;
+}
+
+.input[value="Stad:"]{
+  margin: 0 10px;
+  padding-left: 10px;
+}
+.submit-btn{
+  width: 35px;
+  height: 71px;
+  
+ }
+.submit-btn, .delete-btn{
+  border-style: none;
+  background-color: #FFFF;
+  
+}
+
+.submit-icon, .delete-icon{
+ width: 15px;
+ height: 15px;
+ 
+}
+
 .label, .input{
   font-family: 'Roboto', sans-serif;
 }
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  gap: 20px;
+  justify-content: center;
+  padding-top: 50px;
+}
+.box{
+  display: grid;
+  grid-template-areas: '. . delete'
+                       'icon temp .';
+  justify-items: center;
+  justify-content: space-around;
+  align-content: center;
+  height: 181px;
+  background-color: #F24726;
+}
+.delete-btn{
+  grid-area: delete;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: 60px;
+  padding-top: 2px;
+}
+.icon{
+  grid-area: icon;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 50px;
+}
+.flex-temp{
+  grid-area: temp;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+span, h4{
+  font-family: 'Roboto', sans-serif;
+  color: #FFFF;
+  font-weight: 500;
+}
+span{
+  font-size: 46px;
+}
+h4{
+  font-size: 15px;
+  justify-content: center;
+}
 
 
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 1110px){
   .App{
     width: 100vw;
     height: 100vh;
@@ -70,14 +170,9 @@
     
   }
   
-  .delete-btn{
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-  }
   .submit-icon, .delete-icon{
-   width: 20px;
-   height: 20px;
+   width: 15px;
+   height: 15px;
    
   }
   .container{
@@ -89,13 +184,34 @@
   }
   .box{
     display: grid;
-    background-color: #F24726;
+    grid-template-areas: '. . delete'
+                         'icon temp .';
+    justify-items: center;
+    justify-content: space-around;
+    align-content: center;
     height: 120px;
+    background-color: #F24726;
+  }
+  .delete-btn{
+    grid-area: delete;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: 60px;
+    padding-top: 2px;
   }
   .icon{
-    width: 60px;
-    height: 60px;
+    grid-area: icon;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 50px;
   }
+  .flex-temp{
+    grid-area: temp;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
   span, h4{
     font-family: 'Roboto', sans-serif;
     color: #FFFF;
@@ -105,6 +221,7 @@
     font-size: 46px;
   }
   h4{
-    font-size: 15px
+    font-size: 15px;
+    justify-content: center;
   }
 }
