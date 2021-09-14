@@ -42,9 +42,9 @@
   border-style: none;
 }
 
-.input[value="Stad:"]{
+.input[placeholder="Stad"]{
   margin: 0 10px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 .submit-btn{
   width: 35px;

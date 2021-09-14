@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import Weather from './weather'
+import Page from './page';
+
 
 
 function App() {
   return (
     <div className="App">
-    <Weather/>
+    <Page/>
     </div>
   );
 }
