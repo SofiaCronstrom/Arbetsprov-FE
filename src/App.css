@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -43,9 +43,13 @@
     font-weight: 900;
     font-size: 2em;
   }
-
+ .flex-input{
+   display: inline-flex;
+   width: 340px;
+   height: 71px;
+ }
   .input{
-    width: 335px;
+    width: 310px;
     height: 71px;
    font-size: 1.25em;
     border-style: none;
@@ -55,8 +59,25 @@
     margin: 0 10px;
     padding-left: 10px;
   }
-
-  .submit-button{
+  .submit-btn{
+    width: 35px;
+    height: 71px;
+    
+   }
+  .submit-btn, .delete-btn{
+    border-style: none;
+    background-color: #FFFF;
+    
+  }
+  
+  .delete-btn{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  .submit-icon, .delete-icon{
+   width: 20px;
+   height: 20px;
    
   }
   .container{
@@ -67,7 +88,23 @@
     padding-top: 50px;
   }
   .box{
+    display: grid;
     background-color: #F24726;
     height: 120px;
+  }
+  .icon{
+    width: 60px;
+    height: 60px;
+  }
+  span, h4{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFF;
+    font-weight: 500;
+  }
+  span{
+    font-size: 46px;
+  }
+  h4{
+    font-size: 15px
   }
 }
