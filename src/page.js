@@ -1,11 +1,11 @@
-import Weather from './fetchWeather';
+import Weather from './weather';
 import Form from './form';
 import Error from './error';
 import useWeather from './useWeather';
 
 const Page = () => {
 
-const {isError, weather, submitRequest} = useWeather();
+const {isError, submitRequest, weather} = useWeather();
 
 const onSubmit = (value) => {
     submitRequest(value)
@@ -14,7 +14,7 @@ const onSubmit = (value) => {
         <div>
         {!isError && <Form onSubmitSearch={onSubmit}/>}
         {isError && <Error/>}
-        {weather && <Weather/>}
+        {weather && <Weather weather={weather}/>}
         </div>
      );
 }
