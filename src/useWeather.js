@@ -22,10 +22,11 @@ const useWeather = () => {
     }
         
   const today = (data) =>{
+      
     const temp = data.current.temperature;
     const city = data.location.name;
-    
-    setWeather({temp, city});
+   
+    setWeather({temp, city})
  
   }
     
