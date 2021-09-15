@@ -186,10 +186,12 @@ h4{
     display: grid;
     grid-template-areas: '. . delete'
                          'icon temp .';
+    /*grid-template-rows: repeat(2, 60px);*/
     justify-items: center;
     justify-content: space-around;
     align-content: center;
-    height: 120px;
+    align-items: center;
+    height: 140px;
     background-color: #F24726;
   }
   .delete-btn{
@@ -197,19 +199,18 @@ h4{
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    margin-top: 60px;
-    padding-top: 2px;
+    
   }
   .icon{
     grid-area: icon;
-    width: 80px;
-    height: 80px;
-    margin-bottom: 50px;
+    width: 60px;
+    height: 60px;
+    
   }
   .flex-temp{
     grid-area: temp;
     text-align: center;
-    margin-bottom: 50px;
+    
   }
 
   span, h4{

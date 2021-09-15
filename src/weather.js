@@ -8,13 +8,13 @@ const Weather = ({weather}) => {
     
 <div className="container">
 
-        <div className="box">
+        <div className="box" >
         <button className="delete-btn">
         <img src={CloseUnion} alt="cross for delete weather box" className="delete-icon"/>
         </button>
         <img src={Sunny} className="icon" alt="sun"/>
         <div className="flex-temp">
-            <span>{weather.temp}&deg;</span>
+            <span>&deg;</span>
             <h4>{weather.city}</h4>
         </div>  
         </div>
