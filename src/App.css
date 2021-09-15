@@ -144,12 +144,12 @@ h4{
     font-size: 2em;
   }
  .flex-input{
-   display: inline-flex;
+   display: flex;
    width: 340px;
    height: 71px;
  }
   .input{
-    width: 310px;
+    width: 320px;
     height: 71px;
    font-size: 1.25em;
     border-style: none;
@@ -162,7 +162,7 @@ h4{
   .submit-btn{
     width: 35px;
     height: 71px;
-    
+    margin-left: -15px;
    }
   .submit-btn, .delete-btn{
     border-style: none;

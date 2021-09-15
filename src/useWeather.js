@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const key = 'a94c8b198195fc9bc750b4799116fa83';
+const key = '69733d4955544fb54ca4d740f6ea7e48';
 
 const useWeather = () => {
     const [isError, setError] = useState(false);

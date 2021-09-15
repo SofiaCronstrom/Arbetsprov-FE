@@ -2,7 +2,7 @@ import CloseUnion from './images/Union-close.png'
 import Sunny from './images/sunny.png';
 
 
-const Weather = (props) => {
+const Weather = ({weather}) => {
 
     return ( 
     
@@ -14,8 +14,8 @@ const Weather = (props) => {
         </button>
         <img src={Sunny} className="icon" alt="sun"/>
         <div className="flex-temp">
-            <span>{props.temp}&deg;</span>
-            <h4>{props.city}</h4>
+            <span>{weather.temp}&deg;</span>
+            <h4>{weather.city}</h4>
         </div>  
         </div>
         

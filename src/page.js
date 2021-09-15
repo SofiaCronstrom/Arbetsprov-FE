@@ -7,6 +7,7 @@ const Page = () => {
 
 const {isError, submitRequest, weather} = useWeather();
 
+
 const onSubmit = (value) => {
     submitRequest(value)
 }
